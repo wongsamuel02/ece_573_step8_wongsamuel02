@@ -1,4 +1,4 @@
-// Generated from /home/shay/a/sjwong/ECE573/fa2024-595-step7-wongsamuel02/java/MicroC.g4 by ANTLR 4.13.1
+// Generated from /home/shay/a/sjwong/ECE573/ece_573_step8_wongsamuel02/java/MicroC.g4 by ANTLR 4.13.1
 
 
 package compiler;
@@ -161,6 +161,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_program; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterProgram(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitProgram(this);
+		}
 	}
 
 	public final ProgramContext program() throws RecognitionException {
@@ -205,6 +213,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_decls; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterDecls(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitDecls(this);
+		}
 	}
 
 	public final DeclsContext decls() throws RecognitionException {
@@ -271,6 +287,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_var_decls; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterVar_decls(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitVar_decls(this);
+		}
 	}
 
 	public final Var_declsContext var_decls() throws RecognitionException {
@@ -326,6 +350,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_ident; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterIdent(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitIdent(this);
+		}
 	}
 
 	public final IdentContext ident() throws RecognitionException {
@@ -363,6 +395,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_var_decl; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterVar_decl(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitVar_decl(this);
+		}
 	}
 
 	public final Var_declContext var_decl() throws RecognitionException {
@@ -403,6 +443,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_str_decl; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterStr_decl(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitStr_decl(this);
+		}
 	}
 
 	public final Str_declContext str_decl() throws RecognitionException {
@@ -450,6 +498,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_type; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterType(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitType(this);
+		}
 	}
 
 	public final TypeContext type() throws RecognitionException {
@@ -517,6 +573,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_base_type; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterBase_type(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitBase_type(this);
+		}
 	}
 
 	public final Base_typeContext base_type() throws RecognitionException {
@@ -568,6 +632,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_func_type; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterFunc_type(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitFunc_type(this);
+		}
 	}
 
 	public final Func_typeContext func_type() throws RecognitionException {
@@ -627,6 +699,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_func_decl; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterFunc_decl(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitFunc_decl(this);
+		}
 	}
 
 	public final Func_declContext func_decl() throws RecognitionException {
@@ -676,6 +756,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_functions; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterFunctions(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitFunctions(this);
+		}
 	}
 
 	public final FunctionsContext functions() throws RecognitionException {
@@ -744,6 +832,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_function; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterFunction(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitFunction(this);
+		}
 	}
 
 	public final FunctionContext function() throws RecognitionException {
@@ -820,6 +916,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_params; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterParams(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitParams(this);
+		}
 	}
 
 	public final ParamsContext params() throws RecognitionException {
@@ -882,6 +986,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_params_rest; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterParams_rest(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitParams_rest(this);
+		}
 	}
 
 	public final Params_restContext params_rest() throws RecognitionException {
@@ -945,6 +1057,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_param; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterParam(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitParam(this);
+		}
 	}
 
 	public final ParamContext param() throws RecognitionException {
@@ -986,6 +1106,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_statements; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterStatements(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitStatements(this);
+		}
 	}
 
 	public final StatementsContext statements() throws RecognitionException {
@@ -1053,6 +1181,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_statement; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterStatement(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitStatement(this);
+		}
 	}
 
 	public final StatementContext statement() throws RecognitionException {
@@ -1136,6 +1272,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_base_stmt; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterBase_stmt(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitBase_stmt(this);
+		}
 	}
 
 	public final Base_stmtContext base_stmt() throws RecognitionException {
@@ -1209,6 +1353,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_read_stmt; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterRead_stmt(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitRead_stmt(this);
+		}
 	}
 
 	public final Read_stmtContext read_stmt() throws RecognitionException {
@@ -1250,6 +1402,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_print_stmt; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterPrint_stmt(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitPrint_stmt(this);
+		}
 	}
 
 	public final Print_stmtContext print_stmt() throws RecognitionException {
@@ -1291,6 +1451,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_return_stmt; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterReturn_stmt(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitReturn_stmt(this);
+		}
 	}
 
 	public final Return_stmtContext return_stmt() throws RecognitionException {
@@ -1350,6 +1518,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_assign_stmt; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterAssign_stmt(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitAssign_stmt(this);
+		}
 	}
 
 	public final Assign_stmtContext assign_stmt() throws RecognitionException {
@@ -1411,6 +1587,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_lhs; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterLhs(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitLhs(this);
+		}
 	}
 
 	public final LhsContext lhs() throws RecognitionException {
@@ -1468,6 +1652,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_if_stmt; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterIf_stmt(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitIf_stmt(this);
+		}
 	}
 
 	public final If_stmtContext if_stmt() throws RecognitionException {
@@ -1521,6 +1713,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_else_stmt; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterElse_stmt(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitElse_stmt(this);
+		}
 	}
 
 	public final Else_stmtContext else_stmt() throws RecognitionException {
@@ -1591,6 +1791,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_while_stmt; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterWhile_stmt(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitWhile_stmt(this);
+		}
 	}
 
 	public final While_stmtContext while_stmt() throws RecognitionException {
@@ -1642,6 +1850,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_lval; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterLval(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitLval(this);
+		}
 	}
 
 	public final LvalContext lval() throws RecognitionException {
@@ -1721,6 +1937,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_primary; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterPrimary(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitPrimary(this);
+		}
 	}
 
 	public final PrimaryContext primary() throws RecognitionException {
@@ -1924,6 +2148,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_unaryminus_expr; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterUnaryminus_expr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitUnaryminus_expr(this);
+		}
 	}
 
 	public final Unaryminus_exprContext unaryminus_expr() throws RecognitionException {
@@ -1961,6 +2193,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_ptr_expr; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterPtr_expr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitPtr_expr(this);
+		}
 	}
 
 	public final Ptr_exprContext ptr_expr() throws RecognitionException {
@@ -2002,6 +2242,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_addr_of_expr; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterAddr_of_expr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitAddr_of_expr(this);
+		}
 	}
 
 	public final Addr_of_exprContext addr_of_expr() throws RecognitionException {
@@ -2063,6 +2311,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_array_expr; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterArray_expr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitArray_expr(this);
+		}
 	}
 
 	public final Array_exprContext array_expr() throws RecognitionException {
@@ -2158,6 +2414,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_call_expr; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterCall_expr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitCall_expr(this);
+		}
 	}
 
 	public final Call_exprContext call_expr() throws RecognitionException {
@@ -2239,6 +2503,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_arg_list; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterArg_list(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitArg_list(this);
+		}
 	}
 
 	public final Arg_listContext arg_list() throws RecognitionException {
@@ -2302,6 +2574,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_args_rest; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterArgs_rest(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitArgs_rest(this);
+		}
 	}
 
 	public final Args_restContext args_rest() throws RecognitionException {
@@ -2359,6 +2639,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_cast_expr; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterCast_expr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitCast_expr(this);
+		}
 	}
 
 	public final Cast_exprContext cast_expr() throws RecognitionException {
@@ -2408,6 +2696,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expr; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterExpr(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitExpr(this);
+		}
 	}
 
 	public final ExprContext expr() throws RecognitionException {
@@ -2489,6 +2785,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_term; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterTerm(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitTerm(this);
+		}
 	}
 
 	public final TermContext term() throws RecognitionException {
@@ -2570,6 +2874,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_cond; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterCond(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitCond(this);
+		}
 	}
 
 	public final CondContext cond() throws RecognitionException {
@@ -2604,6 +2916,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_cmpop; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterCmpop(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitCmpop(this);
+		}
 	}
 
 	public final CmpopContext cmpop() throws RecognitionException {
@@ -2642,6 +2962,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_mulop; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterMulop(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitMulop(this);
+		}
 	}
 
 	public final MulopContext mulop() throws RecognitionException {
@@ -2680,6 +3008,14 @@ public class MicroCParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_addop; }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).enterAddop(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof MicroCListener ) ((MicroCListener)listener).exitAddop(this);
+		}
 	}
 
 	public final AddopContext addop() throws RecognitionException {

@@ -1,4 +1,4 @@
-// Generated from /home/shay/a/sjwong/ECE573/fa2024-595-step7-wongsamuel02/java/MicroC.g4 by ANTLR 4.13.1
+// Generated from /home/shay/a/sjwong/ECE573/ece_573_step8_wongsamuel02/java/MicroC.g4 by ANTLR 4.13.1
 
 
 package compiler;
