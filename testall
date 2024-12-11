@@ -1,0 +1,44 @@
+#! /bin/bash
+
+if [[ "$RISCSIM" = "" ]]; then
+    RISCSIM=~/RiscSim/driver.py
+fi
+
+RED="$(tput setaf 1)"
+GREEN="$(tput setaf 2)"
+RESET="$(tput sgr0)"
+BOLD="$(tput bold)"
+
+function status {
+    COLOR="$GREEN"
+    MESG="PASS"
+    if [[ $1 -ne 0 ]]; then
+        COLOR="$RED"
+        MESG="FAIL"
+    fi
+
+    printf '%-28s [%s%s%s]  %s%s%s\n' "$2" "$COLOR" "$MESG" "$RESET" "$BOLD" "$3" "$RESET"
+}
+
+function simulate {
+    python3 "$RISCSIM" "$1" 2>/dev/null | head -n -1 > "$2"
+}
+
+printf "%sTest %-23s Status  Input%s\n" "$BOLD" "" "$RESET"
+
+for t in tests/constfold_test*.uC; do
+    # Run the compiler
+    ./runme "$t" out
+
+    # Expected asm file name: replace .uC with .asm
+    asm=$(echo "$t" | sed 's/\.uC$/.asm/')
+
+    # No input for these tests
+    input=""
+    randin=""
+
+    echo -e "$input" | simulate "$asm" rstest
+    echo -e "$input" | simulate out rsout
+    diff rstest rsout > /dev/null
+    status $? "$t" "$randin"
+done
