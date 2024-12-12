@@ -32,7 +32,6 @@ Constant folding is a classical compiler optimization that detects and pre-compu
 - In `Compiler.java`, after parsing (and building the AST) and before code generation, run the `ConstantFoldingVisitor`.
   
 **Tests:**
-Place `constfold_test.uC` and `constfold_test2.uC` in `tests` directory:
 - `constfold_test.uC`: Tests simple constant folding, e.g. `a = 2 + 3;` becomes `a = 5;`, `b = (int)(4.0 * 2.0);` becomes `b = 8;` etc.
 - `constfold_test2.uC`: Tests float folding, e.g. `x = 3.14 * 2.0;` folded to `x = 6.28;` and casting scenarios `(float)(5+5)` to `10.0`.
 
