@@ -42,7 +42,7 @@ When running `testall`, these tests verify that constant folding took place by c
 
 ## Step 7: Original Project Options Recap (for completeness)
 
-I selected **Option 2: Type conversions** for step 7. (If you chose a different option, indicate that here.)
+I selected **Option 2: Type conversions** for step 7.
 
 ---
 
